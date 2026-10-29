@@ -7,7 +7,7 @@ int main() {
     printf("Podaj pierwsza liczbe: ");
     scanf("%d", &a);
 
-    printf("Podaj znak dzialania (+, -, *, /, %): ");
+    printf("Podaj znak dzialania (+, -, *, /, %%): ");
     scanf(" %c", &znak);
 
     printf("Podaj druga liczbe: ");
