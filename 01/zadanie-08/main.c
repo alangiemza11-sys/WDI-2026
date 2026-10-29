@@ -13,7 +13,7 @@ int main() {
     printf("Podaj druga liczbe: ");
     scanf("%d", &b);
 
-    // Sprawdzamy znak za pomocą instrukcji if-else if
+    
     if (znak == '+') {
         printf("Wynik: %d + %d = %d\n", a, b, a + b);
     } 
