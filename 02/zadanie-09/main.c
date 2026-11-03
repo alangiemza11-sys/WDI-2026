@@ -20,4 +20,5 @@ int main() {
     } else {
         printf("Blad: Silnia nie jest zdefiniowana dla liczb ujemnych!\n");
     }
+    return 0;
 }  
