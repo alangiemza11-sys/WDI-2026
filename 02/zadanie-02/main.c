@@ -15,7 +15,8 @@ int main() {
         }
     } while (n < 1 || n > 100);
     for (int i = 1; i <= n; i++) {
-        suma += (long long)i * i;
+        long long kwadrat = (long long)i * i;
+        suma = suma + kwadrat;
     }
 
    
