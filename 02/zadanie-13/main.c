@@ -28,9 +28,9 @@ long long fibonacci(int n) {
 int main() {
     int n;
     
-    printf("Podaj numer wyrazu (n) ciągu Fibonacciego: ");
+    printf("Podaj numer wyrazu (n) ciagu Fibonacciego: ");
     if (scanf("%d", &n) != 1) {
-        printf("Błąd odczytu danych!\n");
+        printf("Blad odczytu danych!\n");
         return 1;
     }
 
@@ -39,7 +39,7 @@ int main() {
     if (wynik != -1) {
         printf("%d. wyraz ciągu Fibonacciego wynosi: %lld\n", n, wynik);
     } else {
-        printf("Błąd: Indeks nie może być ujemny!\n");
+        printf("Blad: Indeks nie moze byc ujemny!\n");
     }
 
     return 0;
