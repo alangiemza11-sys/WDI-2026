@@ -1,27 +1,38 @@
 #include <stdio.h>
-double potega(double liczba,int wykladnik) {
+
+
+double potega(double liczba, int wykladnik) {
     double wynik = 1.0;
+    
+   
+    int w = (wykladnik < 0) ? -wykladnik : wykladnik;
+
+    
+    for (int i = 0; i < w; i++) {
+        wynik *= liczba;
+    }
+
+   
     if (wykladnik < 0) {
         return 1.0 / wynik;
     }
-    for(int i = 1; i <= wykladnik; i++){
-        wynik *= liczba;
-    }
-    
+
     return wynik;
 }
+
 int main() {
-    double liczba;
+    double podstawa;
     int wykladnik;
 
-    printf("Podaj liczbe:");
-    scanf("%lf", &liczba);
-    printf("Podaj wykladnik:");
-    scanf("%d", &wykladnik );
-    double wynik = potega(liczba, wykladnik);
-        printf("Potega o wykładniku %d liczby %lf wynosi: %lf", wykladnik, liczba, wynik);
-        
-return 0;
+    printf("Podaj podstawę potęgi: ");
+    scanf("%lf", &podstawa);
     
+    printf("Podaj wykładnik całkowity: ");
+    scanf("%d", &wykladnik);
 
+    double wynik = potega(podstawa, wykladnik);
+    
+    printf("%.2f do potęgi %d wynosi: %.5f\n", podstawa, wykladnik, wynik);
+
+    return 0;
 }
