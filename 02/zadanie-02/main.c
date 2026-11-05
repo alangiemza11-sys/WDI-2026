@@ -18,7 +18,7 @@ int main() {
         suma += (long long)i * i;
     }
 
-    // Wyświetlenie wyniku
+   
     printf("Suma kwadratów od 1*1 do %d*%d wynosi: %lld\n", n, n, suma);
 
     return 0;
