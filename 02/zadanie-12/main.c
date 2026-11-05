@@ -49,17 +49,17 @@ int main() {
         printf("       KALKULATOR GŁÓWNY     \n");
         printf("=============================\n");
         printf("1. Dodawanie n liczb\n");
-        printf("2. Odejmowanie od liczby aż do 0\n");
-        printf("3. Mnożenie dwóch liczb\n");
+        printf("2. Odejmowanie od liczby az do 0\n");
+        printf("3. Mnozenie dwoch liczb\n");
         printf("4. Dzielenie liczby\n");
-        printf("5. Potęgowanie\n");
+        printf("5. Potegowanie\n");
         printf("6. Kwadrat liczby\n");
         printf("7. Silnia\n");
-        printf("0. Wyjście z programu\n");
-        printf("Wybierz opcję (0-7): ");
+        printf("0. Wyjscie z programu\n");
+        printf("Wybierz opcje (0-7): ");
         
         if (scanf("%d", &wybor) != 1) {
-            printf("Błąd odczytu!\n");
+            printf("Blad odczytu!\n");
             break;
         }
 
@@ -67,10 +67,10 @@ int main() {
             case 1: {
                 int ile;
                 double liczba, wynik = 0;
-                printf("Ile liczb chcesz dodać? ");
+                printf("Ile liczb chcesz dodac? ");
                 scanf("%d", &ile);
                 for(int i = 1; i <= ile; i++) {
-                    printf("Podaj liczbę %d: ", i);
+                    printf("Podaj liczbe %d: ", i);
                     scanf("%lf", &liczba);
                     wynik += liczba;
                 }
@@ -79,11 +79,11 @@ int main() {
             }
             case 2: {
                 double start, liczba;
-                printf("Podaj liczbę początkową: ");
+                printf("Podaj liczbe początkowa: ");
                 scanf("%lf", &start);
-                printf("Podawaj kolejne liczby do odjęcia (wpisz 0, aby zakończyć):\n");
+                printf("Podawaj kolejne liczby do odjecia (wpisz 0, aby zakonczyc):\n");
                 while(1) {
-                    printf("Podaj liczbę: ");
+                    printf("Podaj liczbe: ");
                     scanf("%lf", &liczba);
                     if(liczba == 0) {
                         break;
@@ -95,22 +95,22 @@ int main() {
             }
             case 3: {
                 double a, b;
-                printf("Podaj pierwszą liczbę: ");
+                printf("Podaj pierwsza liczbe: ");
                 scanf("%lf", &a);
-                printf("Podaj drugą liczbę: ");
-                scanf("%lf", &b);
+                printf("Podaj druga liczbe: ");
+                scanf("%lf", &b)
                 double wynik = mnozenie_dwoch_liczb(a, b);
-                printf("Wynik mnożenia: %.5f\n", wynik);
+                printf("Wynik mnozenia: %.5f\n", wynik);
                 break;
             }
             case 4: {
                 double a, b;
-                printf("Podaj dzielną: ");
+                printf("Podaj dzielna: ");
                 scanf("%lf", &a);
                 printf("Podaj dzielnik: ");
                 scanf("%lf", &b);
                 if (b == 0) {
-                    printf("Błąd: Dzielenie przez zero!\n");
+                    printf("Blad: Dzielenie przez zero!\n");
                 } else {
                     double wynik = dzielenie_liczby(a, b);
                     printf("Wynik dzielenia: %.5f\n", wynik);
@@ -120,17 +120,17 @@ int main() {
             case 5: {
                 double liczba;
                 int wykladnik;
-                printf("Podaj podstawę: ");
+                printf("Podaj podstawe: ");
                 scanf("%lf", &liczba);
-                printf("Podaj wykładnik całkowity: ");
+                printf("Podaj wykladnik calkowity: ");
                 scanf("%d", &wykladnik);
                 double wynik = potega(liczba, wykladnik);
-                printf("Wynik potęgowania: %.8f\n", wynik);
+                printf("Wynik potegowania: %.8f\n", wynik);
                 break;
             }
             case 6: {
                 double liczba;
-                printf("Podaj liczbę do kwadratu: ");
+                printf("Podaj liczbe do kwadratu: ");
                 scanf("%lf", &liczba);
                 double wynik = kwadrat_liczby(liczba);
                 printf("Kwadrat liczby wynosi: %.5f\n", wynik);
@@ -138,13 +138,13 @@ int main() {
             }
             case 7: {
                 int n;
-                printf("Podaj liczbę całkowitą nieujemną do silni: ");
+                printf("Podaj liczbe calkowita nieujemna do silni: ");
                 scanf("%d", &n);
                 long long wynik = silnia(n);
                 if (wynik != -1) {
                     printf("Silnia z %d wynosi: %lld\n", n, wynik);
                 } else {
-                    printf("Błąd: Silnia nie jest zdefiniowana dla liczb ujemnych!\n");
+                    printf("Blad: Silnia nie jest zdefiniowana dla liczb ujemnych!\n");
                 }
                 break;
             }
@@ -152,7 +152,7 @@ int main() {
                 printf("Zamykanie kalkulatora. Do zobaczenia!\n");
                 break;
             default:
-                printf("Nie ma takiej opcji w menu! Wybierz liczbę od 0 do 7.\n");
+                printf("Nie ma takiej opcji w menu! Wybierz liczbe od 0 do 7.\n");
         }
 
     } while (wybor != 0);
