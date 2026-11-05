@@ -24,15 +24,15 @@ int main() {
     double podstawa;
     int wykladnik;
 
-    printf("Podaj podstawę potęgi: ");
+    printf("Podaj podstawe potegi: ");
     scanf("%lf", &podstawa);
     
-    printf("Podaj wykładnik całkowity: ");
+    printf("Podaj wykladnik calkowity: ");
     scanf("%d", &wykladnik);
 
     double wynik = potega(podstawa, wykladnik);
     
-    printf("%.2f do potęgi %d wynosi: %.5f\n", podstawa, wykladnik, wynik);
+    printf("%.2f do potegi %d wynosi: %.5f\n", podstawa, wykladnik, wynik);
 
     return 0;
 }
