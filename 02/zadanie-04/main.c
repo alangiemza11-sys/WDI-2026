@@ -21,7 +21,7 @@ int main() {
         }
         
 
-        // Menu główne
+        
         printf("1. Zmień pierwszą liczbę (obecnie: %.2f)\n", a);
         printf("2. Zmień drugą liczbę (obecnie: %.2f)\n", b);
         printf("3. Wybierz działanie (+, -, *, /, %%) (obecnie: %c)\n", znak);
