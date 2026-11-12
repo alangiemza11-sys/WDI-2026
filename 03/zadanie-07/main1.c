@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// 1. Zwraca double (średnią)
 double policz_srednia(int tab[]) {
     int i;
     int suma = 0;
