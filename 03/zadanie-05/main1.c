@@ -3,10 +3,8 @@
 
 int main() {
     int i;
-    // Deklaracja tablicy z gotowymi wartosciami
     int tablica[5] = {5, 12, 9, 23, 42};
 
-    // 1. PETLA FOR
     printf("--- PETLA FOR ---\n");
     printf("Od poczatku do konca:\n");
     for(i = 0; i < 5; i++) {
@@ -19,7 +17,6 @@ int main() {
     }
 
 
-    // 2. PETLA WHILE
     printf("\n--- PETLA WHILE ---\n");
     printf("Od poczatku do konca:\n");
     i = 0;
@@ -36,7 +33,6 @@ int main() {
     }
 
 
-    // 3. PETLA DO-WHILE
     printf("\n--- PETLA DO-WHILE ---\n");
     printf("Od poczatku do konca:\n");
     i = 0;
