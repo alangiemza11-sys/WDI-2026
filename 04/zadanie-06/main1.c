@@ -12,7 +12,7 @@ printf("Podaj swój kod skladajcy sie z cyfr alfabetu:    ");
     scanf("%d", &n);
 do {
 printf("------MENU-------\n");
-printf("Kod: %s     Klucz szyfrujacy: %d\n  ", szyfr, n);
+printf("Aktualny stan Kodu: %s     Klucz szyfrujacy: %d\n  ", szyfr, n);
 printf("1. Szyfruj\n");
 printf("2. Deszyfruj\n");
 printf("3. Zmien klucz\n");
