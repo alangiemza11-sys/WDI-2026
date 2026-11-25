@@ -29,8 +29,10 @@ for(i= 0; szyfr[i] != '\0'; i++) {
         }
     }
 for(i = 0; szyfr[i] != '\0'; i++) {
+   if(szyfr[i] >= 'a' && szyfr[i] <= 'z') {
         c = szyfr[i] + n; 
         szyfr[i] = c;
+   }
     } 
     printf("kod zaszyfrowany wedlug klucza : %s\n", szyfr);
     break;
@@ -41,8 +43,10 @@ for(i = 0; szyfr[i] != '\0'; i++) {
         }
     }
 for(i = 0; szyfr[i] != '\0'; i++) {
+  if(szyfr[i] >= 'a' && szyfr[i] <= 'z') {
         c = szyfr[i] - n; 
         szyfr[i] = c;
+  }
 }
         printf("Kod odszyfrowany:  %s\n", szyfr);
 break;
