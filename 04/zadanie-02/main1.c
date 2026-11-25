@@ -3,7 +3,7 @@
         int i; 
 char imie[21];
 printf("Podaj imie:  ");
-scanf("%s", imie);
+scanf("%20s", imie);
 
 if(imie[0] >= 'a' && imie[0] <= 'z') {
 imie[0] = imie[0] - ('a' - 'A');
